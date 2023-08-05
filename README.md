@@ -4,7 +4,7 @@
 
 ## Licencia
 
-Este proyecto se distribuye bajo la licencia GNU General Public License. Consulta el archivo COPYING para más información. [https://vozexpreza.netlify.app/](https://char-counter.onrender.com/)
+Este proyecto se distribuye bajo la licencia GNU General Public License. Consulta el archivo COPYING para más información. https://char-counter.onrender.com/
 
 ## Contacto
 
