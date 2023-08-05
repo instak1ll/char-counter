@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contador de Caracteres</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 500px;
+            resize: vertical;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        #characterCount {
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contador de Caracteres</h1>
+        <textarea id="textInput" rows="10"></textarea>
+        <p>Caracteres: <span id="characterCount">0</span></p>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const textInput = document.getElementById('textInput');
+            const characterCount = document.getElementById('characterCount');
+            const resetButton = document.getElementById('resetButton');
+
+            textInput.addEventListener('input', () => {
+                const text = textInput.value;
+                characterCount.textContent = text.length;
+            });
+
+            resetButton.addEventListener('click', () => {
+                textInput.value = '';
+                characterCount.textContent = '0';
+            });
+        });
+    </script>
+</body>
+
+</html>
