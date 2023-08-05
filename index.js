@@ -15,7 +15,7 @@ app.post('/api/count-characters', (req, res) => {
     res.json({ count: characterCount });
 });
 
-const port = 3000;
+const port = 10000;
 app.listen(port, () => {
     console.log(`Servidor en funcionamiento en http://localhost:${port}`);
 });
